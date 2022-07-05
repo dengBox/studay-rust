@@ -10,6 +10,7 @@
 范围|描述|commitId
 --|--|--
  - | 修改ci | [5cab130](https://github.com/dengBox/studay-rust/commit/5cab130)
+ - | update ci | [3e38fdf](https://github.com/dengBox/studay-rust/commit/3e38fdf)
 
 
 范围|描述|commitId
