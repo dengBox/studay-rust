@@ -1,9 +1,10 @@
-# 1.0.0 (2022-07-05)
+# 1.0.0 (2022-07-21)
 
 ### 🌟 新功能
 范围|描述|commitId
 --|--|--
  - | 初始化项目 | [4052577](https://github.com/dengBox/studay-rust/commit/4052577)
+ - | add hello world | [cfd8545](https://github.com/dengBox/studay-rust/commit/cfd8545)
 
 
 ### 📦 持续集成

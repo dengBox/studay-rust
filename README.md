@@ -21,3 +21,8 @@
 1. yarn install
 2. yarn docs:dev
 3. git ...
+
+## links
+
+[vitepress](https://vitepress.vuejs.org/)
+[emoji](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
