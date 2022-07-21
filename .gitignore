@@ -3,7 +3,9 @@
 /dist
 .history
 
+# build files
 /docs/.vitepress/dist/
+/**/target/
 
 # local env files
 .env.local
