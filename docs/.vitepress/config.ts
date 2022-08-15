@@ -74,7 +74,48 @@ export default defineConfig({
         collapsible: true,
         items: [
           { text: '环境搭建', link: '/quick-start/index' },
-          { text: 'Hello World', link: '/quick-start/hello-world' },
+          { text: 'cargo', link: '/quick-start/cargo' },
+          { text: 'Hello World', link: '/quick-start/hello-world' }
+        ]
+      },
+      {
+        text: '语法学习',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          { text: '变量', link: 'grammar/index' },
+        ]
+      },
+      {
+        text: 'web开发',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          { text: '创建环境', link: 'web-app/index' },
+        ]
+      },
+      {
+        text: 'wasm开发',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          { text: '创建环境', link: 'wasm-app/index' },
+        ]
+      },
+      {
+        text: 'cli开发',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          { text: '创建环境', link: 'cli-app/index' },
+        ]
+      },
+      {
+        text: '嵌入式开发',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          { text: '创建环境', link: 'embedd-app/index' },
         ]
       },
       {
@@ -82,7 +123,7 @@ export default defineConfig({
         collapsed: true,
         collapsible: true,
         items: [
-          { text: '环境搭建', link: '/cross-end/index' },
+          { text: '环境搭建', link: '/straddle-end-app/index' },
         ]
       }
     ],
@@ -94,6 +135,9 @@ export default defineConfig({
       copyright: 'Copyright © 2019-present boshen'
     }
   },
+  markdown: {
+    lineNumbers: true
+  }
   // docFooter: {
   //   prev: 'Pagina prior',
   //   next: 'Proxima pagina'
