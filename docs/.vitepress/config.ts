@@ -60,7 +60,7 @@ export default defineConfig({
   themeConfig: {
     lastUpdatedText: 'Updated Date',
     nav: [
-      { text: 'Guide', link: '/guide' },
+      // { text: 'Guide', link: '/guide' },
       {
         text: '快速链接',
         items: [

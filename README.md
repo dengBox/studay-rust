@@ -26,3 +26,5 @@
 
 [vitepress](https://vitepress.vuejs.org/)
 [emoji](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
+[rusty-book](https://github.com/rustlang-cn/rusty-book)
+[rusty](https://rusty.rs/about.html)
