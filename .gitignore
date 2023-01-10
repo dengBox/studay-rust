@@ -6,10 +6,15 @@
 # build files
 /docs/.vitepress/dist/
 /**/target/
+/docs/.vitepress/cache
 
 # local env files
 .env.local
 .env.*.local
+
+#lock files
+yarn.lock
+package-lock.json
 
 # Log files
 npm-debug.log*

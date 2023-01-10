@@ -6,16 +6,17 @@
   "author": "dengbo <1716775221@qq.com>",
   "license": "MIT",
   "scripts": {
-    "docs:dev": "vitepress dev docs --host",
+    "doc": "vitepress dev docs --host",
     "docs:serve": "vitepress serve docs",
     "docs:build": "vitepress build docs",
-    "lint": "eslint --fix",
+    "lint": "eslint --fix --cache",
     "cz": "npm run log && git add . && git cz",
-    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0"
+    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0",
+    "commitlint": "commitlint --config commitlint.config.js -e -V",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.4",
-    "commitizen": "^4.2.4",
+    "commitizen": "^4.2.5",
     "commitlint": "^13.2.0",
     "conventional-changelog-cli": "^2.1.1",
     "eslint": "^7.32.0",
@@ -23,9 +24,13 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-standard": "^5.0.0",
     "husky": "^7.0.2",
+    "lint-staged": "^13.1.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-mathjax3": "^4.3.2",
     "right-pad": "^1.0.1",
+    "sass": "^1.55.0",
+    "vitepress": "^1.0.0-alpha.4",
     "vue-cli-plugin-commitlint": "^1.0.12"
   },
   "config": {
@@ -34,7 +39,7 @@
     }
   },
   "engines": {
-    "node": ">= 14"
+    "node": ">= 16"
   },
   "repository": {
     "type": "git",
@@ -44,9 +49,15 @@
     "url": "https://github.com/dengBox/studay-rust/issues"
   },
   "homepage": "https://dengbox.github.io/drop-manger",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+  "lint-staged": {
+    "*": [
+      "prettier --write --cache --ignore-unknown"
+    ],
+    "docs/*/{src,types}/**/*.ts": [
+      "eslint --cache --fix"
+    ],
+    "docs/**/*.d.ts": [
+      "eslint --cache --fix"
+    ]
   }
 }

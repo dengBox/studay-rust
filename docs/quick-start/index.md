@@ -1,5 +1,7 @@
 # 环境搭建
 
+> 因为作者是前端出身，所以本文可能更适合前端同学阅读，在记录一些知识点时，会简单介绍和javascript中的一些区别
+
 开发`rust`需要一款趁手的编辑器以及`rust`编译环境，这里选用`Visual Studio Code`  
 * [Rust 编译工具](https://www.rust-lang.org/zh-CN/tools/install)
 * [Visual Studio Code](https://code.visualstudio.com/Download)
