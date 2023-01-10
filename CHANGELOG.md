@@ -12,6 +12,7 @@
 范围|描述|commitId
 --|--|--
  - | update book navs | [12c0453](https://github.com/dengBox/studay-rust/commit/12c0453)
+ - | update grammar | [98ca9b9](https://github.com/dengBox/studay-rust/commit/98ca9b9)
 
 
 ### 📦 持续集成
