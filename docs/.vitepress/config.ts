@@ -84,22 +84,7 @@ export default defineConfig({
         collapsible: true,
         items: [
           { text: '变量', link: 'grammar/index' },
-        ]
-      },
-      {
-        text: 'web开发',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          { text: '创建环境', link: 'web-app/index' },
-        ]
-      },
-      {
-        text: 'wasm开发',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          { text: '创建环境', link: 'wasm-app/index' },
+          { text: '数据类型', link: 'grammar/data-type' },
         ]
       },
       {
@@ -111,11 +96,11 @@ export default defineConfig({
         ]
       },
       {
-        text: '嵌入式开发',
+        text: 'web开发',
         collapsed: true,
         collapsible: true,
         items: [
-          { text: '创建环境', link: 'embedd-app/index' },
+          { text: '创建环境', link: 'web-app/index' },
         ]
       },
       {
@@ -124,6 +109,22 @@ export default defineConfig({
         collapsible: true,
         items: [
           { text: '环境搭建', link: '/straddle-end-app/index' },
+        ]
+      },
+      {
+        text: 'wasm开发',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          { text: '创建环境', link: 'wasm-app/index' },
+        ]
+      },
+      {
+        text: '嵌入式开发',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          { text: '创建环境', link: 'embedd-app/index' },
         ]
       }
     ],
@@ -136,8 +137,12 @@ export default defineConfig({
     }
   },
   markdown: {
-    lineNumbers: true
-  }
+    lineNumbers: true,
+    config: md => {
+      md.use(require('markdown-it-mathjax3'))
+      md.linkify.set({ fuzzyEmail: false })
+    }
+  },
   // docFooter: {
   //   prev: 'Pagina prior',
   //   next: 'Proxima pagina'

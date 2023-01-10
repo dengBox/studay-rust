@@ -4,7 +4,7 @@
 
 ## 使用 rustc
 
-因为`Rust`是静态语言，所以需要编译之后才可以执行，而`Ruby、Python、JavaScript`是动态语言，所以可以直接执行。
+因为`Rust`是静态语言，所以需要编译之后才可以执行（最大区别是变量数据类型不可变），而`Ruby、Python、JavaScript`是动态语言，所以可以直接执行。
 
 1. 新建`main.rs`(约定文件后缀为rs)
 ```rs
