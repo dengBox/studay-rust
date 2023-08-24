@@ -29,14 +29,12 @@ Rust 编译工具推荐使用刚才从上方链接中下载的 Rustup 安装。�
 
 您在安装 Rustup 时，也会安装 Rust 构建工具和包管理器的最新稳定版，即 Cargo。Cargo 可以做很多事情：
 
-`cargo build` 可以构建项目
-`cargo run` 可以运行项目
-`cargo test` 可以测试项目
-`cargo doc` 可以为项目构建文档
-`cargo publish` 可以将库发布到 crates.io。
 要检查您是否安装了 Rust 和 Cargo，可以在终端中运行：
 
+```bash
 cargo --version
+```
+
 ### 安装 Visual Studio Code
 
 在上面的链接中，直接下载安装即可。

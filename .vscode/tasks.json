@@ -1,13 +1,21 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "build",
-      "type": "shell",
-      "command": "cargo",
-      "args": [
-        "build"
-      ]
-    }
-  ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "cargo",
+			"options": {
+				"cwd": "${workspaceFolder}/my-studay/"
+			},
+			
+			"args":[
+				"build"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "build",
+			"label": "rust: cargo build"
+		}
+	]
 }

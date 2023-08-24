@@ -1,56 +1,10 @@
 import { defineConfig } from 'vitepress'
-
-interface SocialLink {
-  icon: SocialLinkIcon
-  link: string
-}
+import markDown from 'markdown-it-mathjax3'
 
 export interface DocFooter {
   prev?: string
   next?: string
 }
-
-type NavItem = NavItemWithLink | NavItemWithChildren
-
-type NavItemWithLink = {
-  text: string
-  link: string
-  activeMatch?: string
-}
-
-interface NavItemWithChildren {
-  text?: string
-  items: NavItemWithLink[]
-  activeMatch?: string
-}
-
-type Sidebar = SidebarGroup[] | SidebarMulti
-
-interface SidebarMulti {
-  [path: string]: SidebarGroup[]
-}
-
-interface SidebarGroup {
-  text: string
-  items: SidebarItem[]
-  collapsible?: boolean
-  collapsed?: boolean
-}
-
-interface SidebarItem {
-  text: string
-  link: string
-}
-
-type SocialLinkIcon =
-  | 'discord'
-  | 'facebook'
-  | 'github'
-  | 'instagram'
-  | 'linkedin'
-  | 'slack'
-  | 'twitter'
-  | 'youtube'
 
 export default defineConfig({
   base: '/studay-rust',
@@ -134,17 +88,20 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2019-present boshen'
+    },
+    docFooter: {
+      prev: 'Pagina prior',
+      next: 'Proxima pagina'
     }
   },
   markdown: {
     lineNumbers: true,
     config: md => {
-      md.use(require('markdown-it-mathjax3'))
+      md.use(markDown)
       md.linkify.set({ fuzzyEmail: false })
     }
   },
-  // docFooter: {
-  //   prev: 'Pagina prior',
-  //   next: 'Proxima pagina'
-  // }
+  vite: {
+    configFile:'vite.config.js'
+  }
 })
