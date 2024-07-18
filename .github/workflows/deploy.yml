@@ -20,14 +20,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: "16"
-          
       # 缓存 node_modules
       - uses: pnpm/action-setup@v2
         with:
@@ -39,7 +34,7 @@ jobs:
           cache: 'pnpm'
  
       - name: install and build
-        run: pnpm docs:build
+        run:  pnpm i &&  pnpm docs:build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
