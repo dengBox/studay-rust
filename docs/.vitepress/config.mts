@@ -1,11 +1,6 @@
 import { defineConfig } from 'vitepress'
 import markDown from 'markdown-it-mathjax3'
 
-export interface DocFooter {
-  prev?: string
-  next?: string
-}
-
 export default defineConfig({
   base: '/studay-rust',
   title: 'Studay Rust',
@@ -25,9 +20,8 @@ export default defineConfig({
     sidebar: [
       {
         text: '快速开始',
-        collapsible: true,
         items: [
-          { text: '环境搭建', link: '/quick-start/index' },
+          { text: '环境搭建', link: '/quick-start/' },
           { text: 'cargo', link: '/quick-start/cargo' },
           { text: 'Hello World', link: '/quick-start/hello-world' }
         ]
@@ -35,10 +29,10 @@ export default defineConfig({
       {
         text: '语法学习',
         collapsed: true,
-        collapsible: true,
         items: [
-          { text: '变量', link: 'grammar/index' },
-          { text: '数据类型', link: 'grammar/data-type' },
+          { text: '变量', link: '/grammar/' },
+          { text: '数据类型', link: '/grammar/data-type' },
+          { text: '语句与表达式', link: '/grammar/statement' }
         ]
       },
       {
@@ -46,7 +40,7 @@ export default defineConfig({
         collapsed: true,
         collapsible: true,
         items: [
-          { text: '创建环境', link: 'cli-app/index' },
+          { text: '创建环境', link: '/cli-app/' },
         ]
       },
       {
@@ -54,7 +48,7 @@ export default defineConfig({
         collapsed: true,
         collapsible: true,
         items: [
-          { text: '创建环境', link: 'web-app/index' },
+          { text: '创建环境', link: '/web-app/' },
         ]
       },
       {
@@ -62,7 +56,7 @@ export default defineConfig({
         collapsed: true,
         collapsible: true,
         items: [
-          { text: '环境搭建', link: '/straddle-end-app/index' },
+          { text: '环境搭建', link: '/straddle-end-app/' },
         ]
       },
       {
@@ -70,7 +64,7 @@ export default defineConfig({
         collapsed: true,
         collapsible: true,
         items: [
-          { text: '创建环境', link: 'wasm-app/index' },
+          { text: '创建环境', link: '/wasm-app/' },
         ]
       },
       {
@@ -78,7 +72,7 @@ export default defineConfig({
         collapsed: true,
         collapsible: true,
         items: [
-          { text: '创建环境', link: 'embedd-app/index' },
+          { text: '创建环境', link: '/embedd-app/' },
         ]
       }
     ],
