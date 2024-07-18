@@ -31,21 +31,21 @@ jobs:
       # 缓存 node_modules
       - name: Cache dependencies
         uses: actions/cache@v2
-        id: yarn-cache
+        id: pnpm-cache
         with:
           path: |
             **/node_modules
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm.lock') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-
+            ${{ runner.os }}-pnpm-
             
       # 如果缓存没有命中，安装依赖，根据实际来改，也可以是npm，这里是用的yarn
       - name: Install dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn
+        if: steps.pnpm-cache.outputs.cache-hit != 'true'
+        run: pnpm i
  
       - name: install and build
-        run: yarn docs:build
+        run: pnpm docs:build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
