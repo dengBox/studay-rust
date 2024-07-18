@@ -4,14 +4,14 @@ layout: home
 hero:
   name: studay-rust
   text: rust入门，进阶.
-  tagline: 高扩展的组件库
+  tagline: 学就完事了
   image:
     src: /images/logo.svg
     alt: studay-rust
   actions:
     - theme: brand
       text: 快速开始
-      link: /quick-start/index
+      link: /quick-start/
     - theme: alt
       text: View on GitHub
       link: https://github.com/vuejs/vitepress

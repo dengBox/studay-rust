@@ -4,32 +4,38 @@
   "description": "学习rust",
   "author": "dengbo <1716775221@qq.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "doc": "vitepress dev docs --host",
     "docs:serve": "vitepress serve docs",
     "docs:build": "vitepress build docs",
     "cz": "npm run log && git add . && git cz",
-    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0",
-    "commitlint": "commitlint --config commitlint.config.js -e -V",
-    "prepare": "husky install"
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
-    "@algolia/client-search": "^4.19.1",
+    "@algolia/client-search": "^4.24.0",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "commitizen": "^4.3.0",
-    "commitlint": "^17.7.1",
-    "conventional-changelog-cli": "^3.0.0",
+    "commitlint-config-cz": "^0.13.3",
+    "conventional-changelog-cli": "^4.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
     "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
-    "markdown-it": "^13.0.1",
+    "markdown-it": "^13.0.2",
     "markdown-it-mathjax3": "^4.3.2",
-    "sass": "^1.66.1",
-    "search-insights": "^2.7.0",
-    "vitepress": "1.0.0-rc.4",
-    "vue-cli-plugin-commitlint": "^1.0.12"
+    "sass": "^1.77.8",
+    "search-insights": "^2.15.0",
+    "vitepress": "1.0.0-rc.8"
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/vue-cli-plugin-commitlint/lib/cz"
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.cjs"
     }
   },
   "engines": {
@@ -43,15 +49,7 @@
     "url": "https://github.com/dengBox/studay-rust/issues"
   },
   "homepage": "https://dengbox.github.io/drop-manger",
-  "lint-staged": {
-    "*": [
-      "prettier --write --cache --ignore-unknown"
-    ],
-    "docs/*/{src,types}/**/*.ts": [
-      "eslint --cache --fix"
-    ],
-    "docs/**/*.d.ts": [
-      "eslint --cache --fix"
-    ]
+  "dependencies": {
+    "vite": "^4.5.3"
   }
 }

@@ -1,32 +1,3 @@
-fn main() {
-    let x = 2.0; // f64
-    let y: f32 = 3.0; // f32
-
-    let nan = (-42.0_f32).sqrt();
-    if nan.is_nan() {
-        println!("未定义的数学行为")
-    }
-
-    // 加法
-    let sum = 5 + 10;
-
-    // 减法
-    let difference = 95.5 - 4.3;
-
-    // 乘法
-    let product = 4 * 30;
-
-    // 除法
-    let quotient = 56.7 / 32.2;
-
-    // 求余
-    let remainder = 43 % 5;
-    // 序列
-    for i in 1..=5 {
-        println!("{}",i);
-    }
-}
-
 
 // fn main() {
 //     // 编译器会进行自动推导，给予twenty i32的类型
@@ -54,3 +25,63 @@ fn main() {
 //     // 打印数组中第一个值，并控制小数位为2位
 //     println!("{:.2}", forty_twos[0]);
 //   }
+
+// #[allow(unused_variables)]
+// fn main() {
+//     let x = 2.0; // f64
+//     let y: f32 = 3.0; // f32
+
+//     let nan = (-42.0_f32).sqrt();
+//     if nan.is_nan() {
+//         println!("未定义的数学行为")
+//     }
+
+//     // 加法
+//     let sum = 5 + 10;
+
+//     // 减法
+//     let difference = 95.5 - 4.3;
+
+//     // 乘法
+//     let product = 4 * 30;
+
+//     // 除法
+//     let quotient = 56.7 / 32.2;
+
+//     // 求余
+//     let remainder = 43 % 5;
+//     // 序列
+//     for i in 1..=5 {
+//         println!("{}",i);
+//     }
+// }
+
+// fn main() {
+//     for i in 1..=5 {
+//         println!("{}",i);
+//     }
+// }
+
+fn main() {
+    // 二进制为00000010
+    let a:i32 = 2;
+    // 二进制为00000011
+    let b:i32 = 3;
+
+    println!("(a & b) value is {}", a & b);
+
+    println!("(a | b) value is {}", a | b);
+
+    println!("(a ^ b) value is {}", a ^ b);
+
+    println!("(!b) value is {} ", !b);
+
+    println!("(a << b) value is {}", a << b);
+
+    println!("(a >> b) value is {}", a >> b);
+
+    let mut a = a;
+    // 注意这些计算符除了!之外都可以加上=进行赋值 (因为!=要用来判断不等于)
+    a <<= b;
+    println!("(a << b) value is {}", a);
+}

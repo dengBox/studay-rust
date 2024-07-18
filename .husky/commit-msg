@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm commitlint
+npx --no-install commitlint -e $HUSKY_GIT_PARAMS

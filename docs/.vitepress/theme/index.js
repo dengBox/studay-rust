@@ -1,6 +1,6 @@
-import './index.scss'
 import DefaultTheme from 'vitepress/theme'
 import components from '../components'
+import './index.scss'
 
 export default {
   ...DefaultTheme,

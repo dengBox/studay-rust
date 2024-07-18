@@ -24,9 +24,15 @@
 
 ## links
 
+[rust](https://www.rust-lang.org/zh-CN/)
 [vitepress](https://vitepress.vuejs.org/)
 [emoji](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
-[rusty-book](https://github.com/rustlang-cn/rusty-book)
-[rusty](https://rusty.rs/about.html)
-
 [markdow](https://blog.csdn.net/Flyingheart1991/article/details/126067149)
+
+> rust最佳实践
+[rusty-book](https://github.com/rustlang-cn/rusty-book)
+
+> rust语言圣经及其练习题
+[course](https://course.rs/about-book.html)
+[practice](https://zh.practice.rs/why-exercise.html)
+
