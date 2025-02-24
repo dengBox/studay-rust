@@ -5,7 +5,7 @@
 			"type": "shell",
 			"command": "cargo",
 			"options": {
-				"cwd": "${workspaceFolder}/my-studay/"
+				"cwd": "${workspaceFolder}/packages/hello-rust"
 			},
 			
 			"args":[

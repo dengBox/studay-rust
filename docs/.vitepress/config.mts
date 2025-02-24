@@ -28,11 +28,29 @@ export default defineConfig({
       },
       {
         text: '语法学习',
-        collapsed: true,
+        link: '/grammar/',
         items: [
-          { text: '变量', link: '/grammar/' },
-          { text: '数据类型', link: '/grammar/data-type' },
-          { text: '语句与表达式', link: '/grammar/statement' }
+          {
+            text: '基础入门 ',
+            base: '/grammar/basic-introduction',
+            collapsed: true,
+            link: '/',
+            items: [
+              { text: '变量', link: '/variables' },
+              { text: '数据类型', link: '/data-type' },
+              { text: '语句与表达式', link: '/statement' },
+              { text: '函数', link: '/function' },
+              { text: '所有权', link: '/ownership' },
+              { text: '引用', link: '/quote' },
+            ]
+          },
+          {
+            text: '高级进阶 ',
+            base: '/grammar/advanced-level',
+            collapsed: true,
+            link: '/',
+            items: []
+          },
         ]
       },
       {

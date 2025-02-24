@@ -6,11 +6,11 @@
   "configurations": [
     {
       "name": "cl.exe - 生成和调试活动文件",
-      "type": "cppvsdbg", //这里选择vsdebug
+      "type": "lldb", //这里选择vsdebug
       "request": "launch",
       "args": [],
-      "program": "${workspaceFolder}/my-studay/target/debug/my-studay", //改成可执行文件实际名称！
-      "cwd": "${workspaceFolder}/my-studay/target/debug/",
+      "program": "${workspaceFolder}/packages/hello-rust/target/debug/hello-rust", //改成可执行文件实际名称！
+      "cwd": "${workspaceFolder}/packages/hello-rust/target/debug/",
       "preLaunchTask": "rust: cargo build" //这里需要配置前置任务，因为program需要由前置任务生成
     }
   ]
