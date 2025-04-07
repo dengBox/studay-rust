@@ -32,16 +32,38 @@ export default defineConfig({
         items: [
           {
             text: '基础入门 ',
-            base: '/grammar/basic-introduction',
+            base: '/grammar/basic-introduction/',
             collapsed: true,
-            link: '/',
+            link: '/data-type/',
             items: [
-              { text: '变量', link: '/variables' },
-              { text: '数据类型', link: '/data-type' },
-              { text: '语句与表达式', link: '/statement' },
-              { text: '函数', link: '/function' },
-              { text: '所有权', link: '/ownership' },
-              { text: '引用', link: '/quote' },
+              { text: '变量绑定与解构', link: '/variables' },
+              {
+                text: '基本类型',
+                base: '/grammar/basic-introduction/data-type/',
+                link: '/',
+                items: [
+                  { text: '数据类型', link: '/char-bool-unit-type' },
+                  { text: '语句与表达式', link: '/statement' },
+                  { text: '函数', link: '/function' },
+                ]
+              },
+              {
+                text: '所有权与借用',
+                link: '/',
+                base: '/grammar/basic-introduction/ownership-quote/',
+                items: [
+                  { text: '所有权', link: '/ownership' },
+                  { text: '引用', link: '/quote' },
+                ]
+              },
+              {
+                text: '复合类型',
+                link: '/',
+                base: '/grammar/basic-introduction/complex-type/',
+                items: [
+                  { text: '字符串与切片', link: '/string' },
+                ]
+              },
             ]
           },
           {
