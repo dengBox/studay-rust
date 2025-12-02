@@ -62,6 +62,9 @@ export default defineConfig({
                 base: '/grammar/basic-introduction/complex-type/',
                 items: [
                   { text: '字符串与切片', link: '/string' },
+                  { text: '元祖', link: '/tuple' },
+                  { text: '结构体', link: '/struct' },
+                  { text: '元组', link: '/enum' },
                 ]
               },
             ]
