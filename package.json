@@ -15,20 +15,20 @@
     "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
-    "@algolia/client-search": "^4.24.0",
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
-    "commitizen": "^4.3.0",
+    "@algolia/client-search": "^5.23.2",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "commitizen": "^4.3.1",
     "commitlint-config-cz": "^0.13.3",
-    "conventional-changelog-cli": "^4.1.0",
+    "conventional-changelog-cli": "^5.0.0",
     "cz-conventional-changelog": "^3.3.0",
-    "cz-customizable": "^7.0.0",
-    "husky": "^8.0.3",
-    "markdown-it": "^13.0.2",
+    "cz-customizable": "^7.4.0",
+    "husky": "^9.1.7",
+    "markdown-it": "^14.1.0",
     "markdown-it-mathjax3": "^4.3.2",
-    "sass": "^1.77.8",
-    "search-insights": "^2.15.0",
-    "vitepress": "1.0.0-rc.8"
+    "sass": "^1.86.3",
+    "search-insights": "^2.17.3",
+    "vitepress": "1.6.3"
   },
   "config": {
     "commitizen": {
@@ -50,6 +50,6 @@
   },
   "homepage": "https://dengbox.github.io/drop-manger",
   "dependencies": {
-    "vite": "^4.5.3"
+    "vite": "^6.2.5"
   }
 }

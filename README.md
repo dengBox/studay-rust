@@ -1,6 +1,6 @@
 # studay-rust
 
-学习rust
+学习rust.
 
 ## 愿景
 希望通过本仓库可以让大家了解一门语言如何开发一个完整的应用，从前端到后端，再到设计和QA。
@@ -27,7 +27,7 @@
 [rust](https://www.rust-lang.org/zh-CN/)
 [vitepress](https://vitepress.vuejs.org/)
 [emoji](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
-[markdow](https://blog.csdn.net/Flyingheart1991/article/details/126067149)
+[markdown](https://blog.csdn.net/Flyingheart1991/article/details/126067149)
 
 > rust最佳实践
 [rusty-book](https://github.com/rustlang-cn/rusty-book)

@@ -28,11 +28,55 @@ export default defineConfig({
       },
       {
         text: '语法学习',
-        collapsed: true,
+        link: '/grammar/',
         items: [
-          { text: '变量', link: '/grammar/' },
-          { text: '数据类型', link: '/grammar/data-type' },
-          { text: '语句与表达式', link: '/grammar/statement' }
+          {
+            text: '基础入门 ',
+            base: '/grammar/basic-introduction/',
+            collapsed: true,
+            link: '/data-type/',
+            items: [
+              { text: '变量绑定与解构', link: '/variables' },
+              {
+                text: '基本类型',
+                base: '/grammar/basic-introduction/data-type/',
+                link: '/',
+                items: [
+                  { text: '数据类型', link: '/char-bool-unit-type' },
+                  { text: '语句与表达式', link: '/statement' },
+                  { text: '函数', link: '/function' },
+                ]
+              },
+              {
+                text: '所有权与借用',
+                link: '/',
+                base: '/grammar/basic-introduction/ownership-quote/',
+                items: [
+                  { text: '所有权', link: '/ownership' },
+                  { text: '引用', link: '/quote' },
+                ]
+              },
+              {
+                text: '复合类型',
+                link: '/',
+                base: '/grammar/basic-introduction/complex-type/',
+                items: [
+                  { text: '字符串与切片', link: '/string' },
+                  { text: '元祖', link: '/tuple' },
+                  { text: '结构体', link: '/struct' },
+                  { text: '枚举', link: '/enum' },
+                  { text: '数组', link: '/list' },
+                ]
+              },
+            ]
+          },
+          {
+            text: '高级进阶 ',
+            base: '/grammar/advanced-level',
+            collapsed: true,
+            link: '/',
+            items: []
+          },
         ]
       },
       {

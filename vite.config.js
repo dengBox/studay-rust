@@ -7,7 +7,7 @@ export default ({ mode }) => {
     server: {
       open: true,
       host: '0.0.0.0',
-      port: 8080,
+      port: 8088,
       proxy: {}
     },
     plugins: [
@@ -16,3 +16,5 @@ export default ({ mode }) => {
     ]
   })
 }
+
+
