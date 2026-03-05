@@ -64,7 +64,8 @@ export default defineConfig({
                   { text: '字符串与切片', link: '/string' },
                   { text: '元祖', link: '/tuple' },
                   { text: '结构体', link: '/struct' },
-                  { text: '元组', link: '/enum' },
+                  { text: '枚举', link: '/enum' },
+                  { text: '数组', link: '/list' },
                 ]
               },
             ]
